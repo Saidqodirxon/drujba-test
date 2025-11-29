@@ -1,0 +1,102 @@
+.panarama {
+  width: 100%;
+  border-radius: 36px;
+  background: linear-gradient(180deg, #ffffff, #f7faff);
+  padding: 40px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  max-width: 1600px;
+  margin: 0 auto;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 24px;
+  }
+
+  &__content {
+    max-width: 600px;
+    position: relative;
+    z-index: 3;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #0054e5;
+
+      span {
+        color: #ff6b00;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 28px;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 28px;
+    padding: 12px 22px;
+    background: #0054e5;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    span {
+      font-size: 18px;
+    }
+
+    &:hover {
+      background: #0043c2;
+    }
+  }
+
+  /* RIGHT SIDE IMAGE */
+  &__image {
+    // width: 320px;
+    height: auto;
+    position: absolute;
+    bottom: -40px;
+    right: 24px;
+
+    @media (max-width: 900px) {
+      margin-top: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    /* orange circular arrows and blur look like Figma */
+  }
+
+  /* BACKGROUND BLUR EFFECT (left side) */
+  &::before {
+    content: "";
+    position: absolute;
+    left: 32%;
+    top: 0;
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 158, 0, 0.6),
+      rgba(255, 255, 255, 0)
+    );
+    filter: blur(60px);
+  }
+}
