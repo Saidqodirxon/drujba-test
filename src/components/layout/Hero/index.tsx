@@ -15,50 +15,24 @@ const videoData = [
     title: "O'zbekiston Milliy Simfonik orkestri",
     date: "12–Aprel, 20:00",
     price: "2 000 000 UZS",
-    thumb:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/TearsOfSteel.jpg",
-    video:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+    thumb: "https://xalqlardostligi-ticket.uz/uploads/1757593065098.jpg",
+    video: "https://xalqlardostligi-ticket.uz/uploads/1757593065394.mp4",
   },
   {
     id: 2,
     title: "Volkswagen GTI Review",
     date: "21–Aprel, 18:00",
     price: "1 250 000 UZS",
-    thumb:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/VolkswagenGTIReview.jpg",
-    video:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
-  },
-  {
-    id: 3,
-    title: "We Are Going On Bullrun",
-    date: "3–May, 19:00",
-    price: "900 000 UZS",
-    thumb:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/WeAreGoingOnBullrun.jpg",
-    video:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
-  },
-  {
-    id: 4,
-    title: "Big Buck Bunny",
-    date: "15–May, 21:00",
-    price: "1 500 000 UZS",
-    thumb:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/BigBuckBunny.jpg",
-    video:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    thumb: "https://xalqlardostligi-ticket.uz/uploads/1756729953533.jpg",
+    video: "https://xalqlardostligi-ticket.uz/uploads/1756729954376.mp4",
   },
   {
     id: 5,
     title: "Elephant Dream",
     date: "20–May, 19:30",
     price: "800 000 UZS",
-    thumb:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/images/ElephantsDream.jpg",
-    video:
-      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    thumb: "https://xalqlardostligi-ticket.uz/uploads/1757584617906.jpg",
+    video: "https://xalqlardostligi-ticket.uz/uploads/1757593065394.mp4",
   },
 ];
 
@@ -310,7 +284,7 @@ export default function Hero() {
                       src={slide.video}
                       poster={slide.thumb}
                       autoPlay
-                      muted
+                      // muted
                       loop
                       playsInline
                     />
